@@ -12,6 +12,7 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
         <org.postgresql.version>42.3.1</org.postgresql.version>
+        <org.javax.version>4.0.1</org.javax.version>
     </properties>
 
     <dependencies>
@@ -20,6 +21,13 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${org.postgresql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${org.javax.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     
